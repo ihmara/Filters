@@ -3,7 +3,7 @@ import CoreImage
 public final class ThresholdPaintAlphaFilter: CIFilter {
     
     static let kernel: CIKernel = { () -> CIColorKernel in
-        let bundle = Bundle(for: ThresholdPaintAlphaFilter.self)
+        let bundle = Bundle.main
         guard let url = bundle.url(
             forResource: "ThresholdPaintAlphaFilterKernel.ci",
             withExtension: "metallib"),

@@ -13,7 +13,7 @@ public final class ThresholdPaintAlphaFilter: CIFilter {
         }
         
         guard let url = filtersBundle.url(
-            forResource: "ThresholdPaintAlphaFilterKernel.ci",
+            forResource: "default.ci",
             withExtension: "metallib"),
               let data = try? Data(contentsOf: url) else {
             fatalError("Unable to load metallib")

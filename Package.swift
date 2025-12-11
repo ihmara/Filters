@@ -13,7 +13,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/ihmara/iMetalPlugin.git", revision: "74dc166bf23fb205a9a15ad196f1fda8cb3c7e5b"),
+        .package(url: "https://github.com/ihmara/iMetalPlugin.git", revision: "bdb5e993f957742fce89528b47ac8419c4f6e2f1"),
         //.package(path: "../iMetalPlugin/"),
     ],
     targets: [

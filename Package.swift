@@ -22,9 +22,6 @@ let package = Package(
         .target(
             name: "Filters",
             exclude: ["ThresholdPaintAlphaFilterKernel.ci.metal"],
-            resources: [
-                           .copy("ThresholdPaintAlphaFilterKernel.ci.metallib")
-                       ],
             plugins: [.plugin(name: "iMetalPlugin", package: "iMetalPlugin")]
         )
     ]

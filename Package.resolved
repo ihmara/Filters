@@ -1,12 +1,12 @@
 {
-  "originHash" : "48a065eb4875a7f66c7d8a3e32a38e075faf015d50bf510d72c1f906377ca6dd",
+  "originHash" : "5d1c5739152289efa27ccd81047c3be056113760a94fc87df0584461d305d226",
   "pins" : [
     {
       "identity" : "imetalplugin",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ihmara/iMetalPlugin.git",
       "state" : {
-        "revision" : "1532d4cfefa61b67da7ad378d7c1c20048aa2127"
+        "revision" : "5d13bf6c96cda5cd9f64a2621e78c605b77d1b9e"
       }
     },
     {

@@ -13,7 +13,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/ihmara/iMetalPlugin.git", revision: "1532d4cfefa61b67da7ad378d7c1c20048aa2127"),
+        .package(url: "https://github.com/ihmara/iMetalPlugin.git", revision: "5d13bf6c96cda5cd9f64a2621e78c605b77d1b9e"),
         //.package(path: "../iMetalPlugin/"),
     ],
     targets: [
@@ -22,7 +22,7 @@ let package = Package(
         .target(
             name: "Filters",
             exclude: ["ThresholdPaintAlphaFilterKernel.ci.metal"],
-            plugins: [.plugin(name: "iMetalPlugin", package: "iMetalPlugin")]
+            plugins: [.plugin(name: "SpryMetalPlugin", package: "iMetalPlugin")]
         )
     ]
 )

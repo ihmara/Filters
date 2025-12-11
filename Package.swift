@@ -21,6 +21,7 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "Filters",
+            exclude: ["ThresholdPaintAlphaFilterKernel.ci.metal"],
             plugins: [.plugin(name: "iMetalPlugin", package: "iMetalPlugin")]
         )
     ]

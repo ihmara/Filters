@@ -13,7 +13,8 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/ihmara/iMetalPlugin.git", from: "1.0.0"),
+        .package(url: "https://github.com/ihmara/iMetalPlugin.git", revision: "a859bed30b8ac9d379dca0a4f98279cd3d932cc4"),
+        //.package(path: "../iMetalPlugin/"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -21,6 +22,6 @@ let package = Package(
         .target(
             name: "Filters",
             plugins: [.plugin(name: "iMetalPlugin", package: "iMetalPlugin")]
-        ),
+        )
     ]
 )

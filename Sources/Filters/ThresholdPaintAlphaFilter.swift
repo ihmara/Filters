@@ -4,7 +4,9 @@ public final class ThresholdPaintAlphaFilter: CIFilter {
     
     static let kernel: CIKernel = { () -> CIColorKernel in
         guard let url = Bundle.main.url(
-            forResource: "ThresholdPaintAlphaFilterKernel.ci",
+//            forResource: "ThresholdPaintAlphaFilterKernel.ci",
+//            withExtension: "metallib"),
+            forResource: "default",
             withExtension: "metallib"),
               let data = try? Data(contentsOf: url) else {
             fatalError("Unable to load metallib")

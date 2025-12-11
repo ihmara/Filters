@@ -1,0 +1,24 @@
+{
+  "originHash" : "abe170a7d8c6ab575d955b2282fbf9d42454ea72932d76c3dfa8fe3d16acd64a",
+  "pins" : [
+    {
+      "identity" : "imetalplugin",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ihmara/iMetalPlugin.git",
+      "state" : {
+        "revision" : "ffdccb63b282dc4340aa7c24c94aa83bd2970472",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser",
+      "state" : {
+        "revision" : "cdd0ef3755280949551dc26dee5de9ddeda89f54",
+        "version" : "1.6.2"
+      }
+    }
+  ],
+  "version" : 3
+}

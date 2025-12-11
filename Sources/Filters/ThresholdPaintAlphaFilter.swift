@@ -1,6 +1,6 @@
 import CoreImage
 
-final class ThresholdPaintAlphaFilter: CIFilter {
+public final class ThresholdPaintAlphaFilter: CIFilter {
     
     static let kernel: CIKernel = { () -> CIColorKernel in
         guard let url = Bundle.main.url(
@@ -19,9 +19,9 @@ final class ThresholdPaintAlphaFilter: CIFilter {
         return kernel
     }()
     
-    func applyThresholdPaintAlpha(input: CIImage,
-                                  threshold t: Float,
-                                  ciColor: CIColor) -> CIImage? {
+    public func applyThresholdPaintAlpha(input: CIImage,
+                                         threshold t: Float,
+                                         ciColor: CIColor) -> CIImage? {
         
         let paintRGBA = CIVector(x: ciColor.red, y: ciColor.green, z: ciColor.blue, w: ciColor.alpha)
         return ThresholdPaintAlphaFilter.kernel.apply(
